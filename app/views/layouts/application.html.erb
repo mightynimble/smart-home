@@ -2,11 +2,29 @@
 <html>
 <head>
   <title>SmartHome</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<%= render 'sessions/login_header' %>
+
+<div>
+  <% if flash[:alert] %>
+      <div>
+        <ul>
+          <li><%= flash[:alert].html_safe %></li>
+        </ul>
+      </div>
+  <% elsif flash[:notice] %>
+      <div>
+        <ul>
+          <li><%= flash[:notice].html_safe %></li>
+        </ul>
+      </div>
+  <% end %>
+</div>
 
 <%= yield %>
 

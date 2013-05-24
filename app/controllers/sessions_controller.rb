@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       user = users.first
       if user.authenticate(params[:user][:password])
         session[:user] = user.attributes
-        render 'dashboards/show'
+        render 'dashboards/index'
       else
         redirect_to root_url
       end
@@ -18,5 +18,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    session[:user] = nil
+    redirect_to root_url
   end
 end

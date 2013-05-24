@@ -1,0 +1,6 @@
+<div>
+  <% if current_user %>
+      <li><strong><%= current_user['uid'] %></strong></li>
+      <li><%= link_to "Log Out", logout_path %></li>
+  <% end %>
+</div>
