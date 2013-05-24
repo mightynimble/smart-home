@@ -1,5 +1,7 @@
 SmartHome::Application.routes.draw do
 
+  get "temperatures/index"
+
   get "dashboards/index"
 
   get 'sessions/login' => 'sessions#new', :as => 'login'
