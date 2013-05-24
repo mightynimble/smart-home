@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a425abc-dde5-448d-a2ca-3b8c74e00a6d" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/controllers/session_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/session/create.html.erb" afterPath="$PROJECT_DIR$/app/views/sessions/create.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/session/destroy.html.erb" afterPath="$PROJECT_DIR$/app/views/sessions/destroy.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/session/new.html.erb" afterPath="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/session_store.rb" afterPath="$PROJECT_DIR$/config/initializers/session_store.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="smart-home.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6a425abc-dde5-448d-a2ca-3b8c74e00a6d" time="1369419085240" ignored="false" />
+    <file path="/Dummy.txt" changelist="6a425abc-dde5-448d-a2ca-3b8c74e00a6d" time="1369419104573" ignored="false" />
     <file path="/_form.html.erb" changelist="6a425abc-dde5-448d-a2ca-3b8c74e00a6d" time="1369415289459" ignored="false" />
     <file path="/routes.rb" changelist="6a425abc-dde5-448d-a2ca-3b8c74e00a6d" time="1369418856830" ignored="false" />
     <file path="/new.html.erb" changelist="6a425abc-dde5-448d-a2ca-3b8c74e00a6d" time="1369418190376" ignored="false" />
@@ -609,7 +602,11 @@
       <created>1369415633293</created>
       <updated>1369415633293</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Login module initial commit.">
+      <created>1369419106377</created>
+      <updated>1369419106377</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -678,7 +675,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="excluded .idea&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login module initial commit." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -695,6 +692,7 @@
     <MESSAGE value="removed public/index&#10;" />
     <MESSAGE value=".idea file" />
     <MESSAGE value="excluded .idea&#10;" />
+    <MESSAGE value="Login module initial commit." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
