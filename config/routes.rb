@@ -1,14 +1,12 @@
 SmartHome::Application.routes.draw do
 
-  get "session/new"
+  get "dashboards/index"
 
-  get "session/create"
-
-  get "session/destroy"
-
-  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  post 'sessions/new' => 'sessions#create'
 
   resources :users
+  resources :sessions
 
   root :to => 'sessions#new'
 end

@@ -1,0 +1,12 @@
+<h1>Session#new</h1>
+<%= form_for :user do |f| %>
+    <p>
+      <%= f.label :uid, 'User Name:' %><br/>
+      <%= f.text_field :uid %>
+    </p>
+    <p>
+      <%= f.label :password, 'Password:' %><br/>
+      <%= f.password_field :password %>
+    </p>
+    <%= f.submit 'Log In' %>
+<% end %>
