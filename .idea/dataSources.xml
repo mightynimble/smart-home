@@ -1,15 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2422839628">
-    <data-source source="LOCAL" name="Rails smart-home: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="e08eed78-f542-4bed-9689-e6027080c298">
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
+  <component name="DataSourceManagerImpl" format="xml" hash="701828669">
+    <data-source source="LOCAL" name="Rails smart-home: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="88fe9a65-1924-48fb-896a-977b1afb62e0">
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/smarthome</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>df9bdf98df99df8bdfeadf89dfdbdfdddfcfdffbdffddfef</user-password>
       <libraries>
         <library>
-          <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/xerial-sqlite-license.txt</url>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/mysql-connector-license.txt</url>
         </library>
         <library>
-          <url>jar://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/sqlite-jdbc-3.7.2.jar!/</url>
+          <url>jar://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/mysql-connector-java-5.1.18-bin.jar!/</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails smart-home: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="b250a376-de70-40b6-98d1-c188eb0356c8">
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/smarthome</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>df9bdf98df99df8bdfeadf89dfdbdfdddfcfdffbdffddfef</user-password>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/mysql-connector-license.txt</url>
+        </library>
+        <library>
+          <url>jar://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/mysql-connector-java-5.1.18-bin.jar!/</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails smart-home: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="41070129-2eb9-4b08-9c33-98c98247d638">
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/smarthome</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>df9bdf98df99df8bdfeadf89dfdbdfdddfcfdffbdffddfef</user-password>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/mysql-connector-license.txt</url>
+        </library>
+        <library>
+          <url>jar://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/mysql-connector-java-5.1.18-bin.jar!/</url>
         </library>
       </libraries>
     </data-source>

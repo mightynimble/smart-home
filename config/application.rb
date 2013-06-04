@@ -1,3 +1,5 @@
+puts ">>> application.rb"
+
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
@@ -8,6 +10,8 @@ if defined?(Bundler)
   # If you want your assets lazily compiled in production, use this line
   # Bundler.require(:default, :assets, Rails.env)
 end
+
+APP_CONFIG=YAML.load_file('config/application.yml')[Rails.env]
 
 module SmartHome
   class Application < Rails::Application

@@ -4,7 +4,9 @@ class SessionsController < ApplicationController
 
   def create
     users = User.find_all_by_uid(params[:user][:uid])
-    if !users.blank?
+    if users.blank?
+      redirect_to root_url
+    else
       user = users.first
       if user.authenticate(params[:user][:password])
         session[:user] = user.attributes
@@ -12,8 +14,6 @@ class SessionsController < ApplicationController
       else
         redirect_to root_url
       end
-    else
-      redirect_to root_url
     end
   end
 

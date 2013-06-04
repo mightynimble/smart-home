@@ -1,0 +1,21 @@
+defaults: &defaults
+  mysql_username: root
+  mysql_password: 123!@#
+  # if this value is changed, the values in javascript files (e.g. temperature.js) should also be changed.
+  max_chart_points: 60
+  temp_cpu_1_core: CPU Core 1
+  temp_cpu_2_core: CPU Core 3
+  temp_hd: SMART Disk SanDisk SDSSDX120GG25 (130810401622)
+  temp_cpu_1_diode: SMC CPU A DIODE
+  temp_cpu_2_diode: SMC CPU B DIODE
+  temp_heat_sink: SMC MAIN HEAT SINK 1
+  temp_logic_board: SMC MAIN LOGIC BOARD
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
