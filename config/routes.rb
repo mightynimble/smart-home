@@ -2,7 +2,7 @@ SmartHome::Application.routes.draw do
 
   get "temperatures/index"
 
-  get "temperatures/last_:number_:unit" => 'temperatures#last_60_minutes', :constraints => {:number => /\d+/, :unit => /.+/}
+  get "temperatures/get_metrics" => 'temperatures#get_metrics'
 
   get "dashboards/index"
 

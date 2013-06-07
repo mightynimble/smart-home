@@ -4,11 +4,11 @@ class Temperature < ActiveRecord::Base
   def self.find_time_span(number, unit, *args, &block)
     case unit
       when 'days', 'day', 'd'
-        history_metrics(number * 60 * 24)
+        history_metrics(number.to_i * 60 * 24)
       when 'hours', 'hour', 'hr', 'h'
-        history_metrics(number * 60)
+        history_metrics(number.to_i * 60)
       when 'minutes', 'minute', 'min', 'm'
-        history_metrics(number)
+        history_metrics(number.to_i)
       else
         nil
     end
@@ -58,9 +58,7 @@ class Temperature < ActiveRecord::Base
     response
   end
 
-  private
-
-  def method_missing(meth, *args, &block)
+  def self.method_missing(meth, *args, &block)
     if meth.to_s =~ /^last_(\d+)_(.+)$/
       find_time_span($1, $2, *args, &block)
     else
