@@ -1,10 +1,10 @@
 Highcharts.setOptions({
     global: {
-        useUTC: false
+        useUTC: true
     }
 });
 
-var url = '/temperatures/last_60_minutes';
+var url = '/temperatures/get_metrics?time_span=last_1_hour';
 $(function () {
     $.getJSON(url, function (data) {
         var chart = new Highcharts.Chart({
