@@ -24,7 +24,7 @@ class Temperature < ActiveRecord::Base
   #           last 3 hours. Every minute, there are 7 temperature metrics being inserted into db. Therefore, we need to
   #           retrieve 7x5x60=2100 metrics from db if interval is 5 minutes.
   def self.init_chart(interval)
-    temps =  Temperature.last(7*60*interval).reverse
+    temps =  Temperature.last(7*60*interval)
     # for now return only cpu 1 temperature
     cpu_1_core = []
 
