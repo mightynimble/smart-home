@@ -6,7 +6,8 @@ class TemperaturesController < ApplicationController
   end
 
   def get_metrics
-    @temperatures = params[:time_span] ? Temperature.send(params[:time_span]) : Temperature.last_60_minutes
+
+    @temperatures = params[:method] ? Temperature.send(params[:method], params[:interval].to_i) : Temperature.last_60_minutes
     respond_with @temperatures
   end
 end
