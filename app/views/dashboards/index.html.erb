@@ -1,12 +1,65 @@
-<h1>Dashboards#index</h1>
+<div class="container">
+  <h1>Our Smart Home Dashboard</h1>
 
-<section>
-  <h2>System Status</h2>
+  <div class="row">
 
-  <div>
-    <div>Temperature</div>
-    <div>
-      <%= render 'temperatures/temperature_chart' %>
+    <div class="span3" id="sidebar">
+      <!--Sidebar content-->
+      <ul class="nav nav-list sh-sidenav affix" id="menu">
+        <li class="active">
+          <a href="#sys-temp-section">
+            <i class="icon-chevron-right"></i>System Temperature
+          </a>
+        </li>
+        <li>
+          <a href="#sys-res-section">
+            <i class="icon-chevron-right"></i>System Resources
+          </a>
+        </li>
+        <li class="">
+          <a href="#key-proc-section">
+            <i class="icon-chevron-right"></i>Key Processes
+          </a>
+        </li>
+        <li>
+          <a href="#down-status-section">
+            <i class="icon-chevron-right"></i>Downloading Status
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="span9">
+      <!--Body content-->
+      <section id="sys-temp-section">
+        <div class="page-header">
+          <h1>System Temperature</h1>
+        </div>
+        <div>
+          <%= render 'temperatures/temperature_chart' %>
+        </div>
+      </section>
+
+      <section id="sys-res-section">
+        <div class="page-header">
+          <h1>System Resources</h1>
+        </div>
+      </section>
+
+      <section id="key-proc-section">
+        <div class="page-header">
+          <h1>Key Processes</h1>
+        </div>
+      </section>
+
+      <section id="down-status-section">
+        <div class="page-header">
+          <h1>Downloading Status</h1>
+        </div>
+      </section>
     </div>
   </div>
-</section>
+
+
+</div>
