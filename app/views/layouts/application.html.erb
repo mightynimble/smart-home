@@ -2,11 +2,13 @@
 <html>
 <head>
   <title>SmartHome</title>
-  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= stylesheet_link_tag "application" %>
+  <%= stylesheet_link_tag "bootstrap" %>
+  <%= stylesheet_link_tag "bootstrap-responsive" %>
   <%= javascript_include_tag "application", "jquery-2.0.2.min", "highcharts" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body data-target=".bs-docs-sidebar" data-spy="scroll" data-twttr-rendered="true">
 
 <%= render 'sessions/login_header' %>
 

@@ -1,0 +1,64 @@
+#sidebar a {
+    padding: 9px 15px;
+    /*color: #0088CC;*/
+    text-decoration: none;
+}
+
+#sidebar affix1 {
+    position: fixed;
+    top: 30px;
+    width: 258px;
+
+}
+
+.sh-sidenav {
+    background-color: #FFFFFF;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    margin: 30px 0 0;
+    padding: 0;
+    width: 228px;
+}
+
+.icon-chevron-right {
+    float: right;
+    margin-right: -6px;
+    margin-top: 2px;
+    opacity: 1;
+}
+
+.nav-list > li:first-child > a {
+    border-top: 1px solid #DDDDDD;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.nav-list > li:last-child > a {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.nav-list > li > a {
+    border: 1px solid #DDDDDD;
+    border-top: 0;
+    border-radius: 0 0 0 0;
+}
+
+
+/*.nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus {*/
+    /*background-color: #0088CC;*/
+    /*color: #FFFFFF;*/
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);*/
+/*}*/
+
+/* Large desktop */
+@media (min-width: 1200px) {  }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {  }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {  }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {  }

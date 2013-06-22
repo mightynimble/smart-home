@@ -3,7 +3,8 @@
 //
 
 
-$(function () {
+var temperature_chart =
+    $(function () {
 
     var chart = new Highcharts.Chart({
 
@@ -16,8 +17,8 @@ $(function () {
                 text: 'System Temperature'
             },
             xAxis: {
-                type: 'datetime'
-//                tickPixelInterval: 150
+                type: 'datetime',
+                tickPixelInterval: 150
             },
             yAxis: {
                 title: {
@@ -29,7 +30,6 @@ $(function () {
             },
             series: [{
                 name: 'CPU Core 1',
-//                pointInterval: 60000,
                 data: (function() {
                     $.getJSON(
                         '/temperatures/get_metrics?method=init_chart&interval=1',
@@ -40,7 +40,6 @@ $(function () {
                         }
                     );
                 })()
-//                data: [[1371771646000,36]]
             }]
         },
         function (chart) {
