@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130720140528) do
+ActiveRecord::Schema.define(:version => 20130720154940) do
 
   create_table "system_metrics", :force => true do |t|
     t.datetime "inserted"
@@ -33,6 +33,8 @@ ActiveRecord::Schema.define(:version => 20130720140528) do
     t.string   "disk_read"
     t.string   "disk_write"
   end
+
+  add_index "system_metrics", ["inserted"], :name => "index_system_metrics_on_inserted"
 
   create_table "temperatures", :force => true do |t|
     t.string   "device",      :limit => 80, :null => false
