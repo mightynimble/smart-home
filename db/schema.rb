@@ -11,7 +11,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130602145509) do
+ActiveRecord::Schema.define(:version => 20130720140528) do
+
+  create_table "system_metrics", :force => true do |t|
+    t.datetime "inserted"
+    t.integer  "proc_total"
+    t.integer  "proc_running"
+    t.integer  "proc_stuck"
+    t.integer  "proc_sleeping"
+    t.integer  "proc_threads"
+    t.float    "cpu_user"
+    t.float    "cpu_sys"
+    t.string   "mem_wired"
+    t.string   "mem_active"
+    t.string   "mem_inactive"
+    t.string   "mem_used"
+    t.integer  "net_in_pkt"
+    t.string   "net_in_data"
+    t.integer  "net_out_pkt"
+    t.string   "net_out_data"
+    t.string   "disk_read"
+    t.string   "disk_write"
+  end
 
   create_table "temperatures", :force => true do |t|
     t.string   "device",      :limit => 80, :null => false
