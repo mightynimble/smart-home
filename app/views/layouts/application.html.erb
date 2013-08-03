@@ -5,7 +5,10 @@
   <%= stylesheet_link_tag "application" %>
   <%= stylesheet_link_tag "bootstrap" %>
   <%= stylesheet_link_tag "bootstrap-responsive" %>
-  <%= javascript_include_tag "application", "jquery-2.0.2.min", "highcharts" %>
+  <%= javascript_include_tag "application", "jquery-2.0.2.min" %>
+  <%= javascript_include_tag "http://code.highcharts.com/highcharts.js" %>
+  <%= javascript_include_tag "http://code.highcharts.com/highcharts-more.js" %>
+  <%= javascript_include_tag "http://code.highcharts.com/modules/exporting.js" %>
   <%= csrf_meta_tags %>
 </head>
 <body data-target=".bs-docs-sidebar" data-spy="scroll" data-twttr-rendered="true">
