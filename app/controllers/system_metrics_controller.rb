@@ -1,0 +1,3 @@
+class SystemMetricsController < ApplicationController
+
+end
