@@ -1,5 +1,7 @@
 SmartHome::Application.routes.draw do
 
+  get "/system_metrics/total_processes" => 'system_metrics#total_processes'
+
   get "temperatures/index"
 
   get "temperatures/get_metrics" => 'temperatures#get_metrics'
