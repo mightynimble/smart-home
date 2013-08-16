@@ -203,7 +203,7 @@ var cpu_gauge =
                         rotation: 'auto'
                     },
                     title: {
-                        text: 'Processes'
+                        text: 'CPU Usage'
                     },
                     plotBands: [
                         {
@@ -252,5 +252,62 @@ var cpu_gauge =
         );
     });
 
+
+
+var memory_pie =
+    $(function () {
+       Highcharts.setOptions({
+           colors: ['#ED561B', '#DDDF00', '#24CBE5', '#50B432', '#64E572', '#FF9655', '#FFF263',      '#6AF9C4']
+       });
+       var chart = new Highcharts.Chart({
+           chart: {
+               plotBackgroundColor: null,
+               plotBorderWidth: null,
+               plotShadow: false,
+               renderTo: 'memory'
+           },
+           title: {
+               text: 'Memory Usage'
+           },
+           tooltip: {
+               pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+           },
+           plotOptions: {
+               pie: {
+                   allowPointSelect: true,
+                   cursor: 'pointer',
+                   dataLabels: {
+                       enabled: false
+                   },
+                   showInLegend: false
+               }
+           },
+           series: [{
+               type: 'pie',
+               name: 'Browser share',
+               data: (function() {
+                   $.getJSON(
+                       '/system_metrics/mem_usage',
+                       function(data) {
+                           var series = chart.series[0];
+                           series.setData(data);
+                       }
+                   );
+               })()
+           }]
+           },
+           function (chart) {
+               setInterval(function () {
+                   $.getJSON(
+                       '/system_metrics/mem_usage',
+                       function(data) {
+                           var series = chart.series[0];
+                           series.setData(data);
+                       }
+                   );
+               }, 120000);
+           }
+       );
+    });
 
 
