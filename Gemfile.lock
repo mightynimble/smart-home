@@ -85,6 +85,8 @@ GEM
     rake (10.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     ruby-debug-base19x (0.11.30.pre12)
       debugger-ruby_core_source (>= 1.1.4)
       rake (>= 0.8.1)
@@ -119,6 +121,7 @@ DEPENDENCIES
   jquery-rails
   mysql2
   rails (= 3.2.13)
+  rest-client
   ruby-debug-base19x
   ruby-debug-ide
   sass-rails (~> 3.2.3)

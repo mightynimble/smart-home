@@ -10,6 +10,9 @@ defaults: &defaults
   temp_cpu_2_diode: SMC CPU B DIODE
   temp_heat_sink: SMC MAIN HEAT SINK 1
   temp_logic_board: SMC MAIN LOGIC BOARD
+  utorrent_user: admin
+  utorrent_password: admin
+  utorrent_url_prefix: http://localhost:8080/gui
 
 development:
   <<: *defaults

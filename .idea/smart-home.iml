@@ -51,6 +51,7 @@
     <orderEntry type="library" scope="PROVIDED" name="railties (v3.2.13, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.0.4, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v3.12.2, RVM: ruby-1.9.3-p429) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rest-client (v1.6.7, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-debug-base19x (v0.11.30.pre12, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-debug-ide (v0.4.17.beta17, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.2.9, RVM: ruby-1.9.3-p429) [gem]" level="application" />
