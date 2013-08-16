@@ -2,6 +2,7 @@ SmartHome::Application.routes.draw do
 
   get "/system_metrics/total_processes" => 'system_metrics#total_processes'
   get "/system_metrics/total_cpu" => 'system_metrics#total_cpu'
+  get "/system_metrics/mem_usage" => 'system_metrics#mem_usage'
 
   get "temperatures/index"
 

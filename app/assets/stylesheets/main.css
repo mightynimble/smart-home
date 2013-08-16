@@ -44,6 +44,12 @@
     border-radius: 0 0 0 0;
 }
 
+.sys-metric-container {
+    width: 270px;
+    height: 270px;
+    display: inline-block;
+}
+
 
 /*.nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus {*/
     /*background-color: #0088CC;*/
