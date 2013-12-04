@@ -1,36 +1,9 @@
-<div class="container">
+<!--<div class="container">-->
   <h1>Our Smart Home Dashboard</h1>
 
   <div class="row">
 
-    <div class="span3" id="sidebar">
-      <!--Sidebar content-->
-      <ul class="nav nav-list sh-sidenav affix" id="menu">
-        <li class="active">
-          <a href="#sys-temp-section">
-            <i class="icon-chevron-right"></i>System Temperature
-          </a>
-        </li>
-        <li>
-          <a href="#sys-res-section">
-            <i class="icon-chevron-right"></i>System Resources
-          </a>
-        </li>
-        <li class="">
-          <a href="#key-proc-section">
-            <i class="icon-chevron-right"></i>Key Processes
-          </a>
-        </li>
-        <li>
-          <a href="#down-status-section">
-            <i class="icon-chevron-right"></i>Downloading Status
-          </a>
-        </li>
-      </ul>
-    </div>
-
-
-    <div class="span9">
+    <div class="span12">
       <!--Body content-->
       <section id="sys-temp-section">
         <div class="page-header">
@@ -56,9 +29,10 @@
         <div class="page-header">
           <h1>Downloading Status</h1>
         </div>
+        <%= render 'downloading/job_status', :utorrent => @utorrent, :downloading => @downloading %>
       </section>
     </div>
   </div>
 
 
-</div>
+<!--</div>-->

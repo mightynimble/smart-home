@@ -8,7 +8,7 @@ class SystemMetricsController < ApplicationController
 
   def total_cpu
     @metrics = SystemMetric.last
-    respond_with [@metrics.cpu_user + @metrics.cpu_sys]
+    respond_with [(@metrics.cpu_user + @metrics.cpu_sys).to_i]
   end
 
   def mem_usage
