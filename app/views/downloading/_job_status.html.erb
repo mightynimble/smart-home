@@ -2,7 +2,7 @@
   <table class='table table-bordered table-condensed table-hover'>
     <thead>
     <tr>
-      <th>Name</th>
+      <th class="torrent-name">Name</th>
       <th>Size</th>
       <th>Status</th>
       <th>Speed</th>
@@ -15,7 +15,7 @@
     <tbody>
     <% @utorrent.list['torrents'].each do |item| %>
       <tr>
-        <td><%= @utorrent.name(item) %></td>
+        <td class="torrent-name"><%= @utorrent.name(item) %></td>
         <td><%= @utorrent.size(item) %></td>
         <td>
           <% case @utorrent.status(item) %>

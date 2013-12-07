@@ -56,6 +56,11 @@
     margin-bottom: 0px;
 }
 
+.torrent-name {
+    width: 50%;
+    text-overflow: ellipsis;
+}
+
 /*.nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus {*/
     /*background-color: #0088CC;*/
     /*color: #FFFFFF;*/
