@@ -1,53 +1,14 @@
-<div>
-  <table class='table table-bordered table-condensed table-hover'>
-    <thead>
-    <tr>
-      <th class="torrent-name">Name</th>
-      <th>Size</th>
-      <th>Status</th>
-      <th>Speed</th>
-      <th>Percent</th>
-      <th>ETA</th>
-      <th>Label</th>
-      <th>Connections</th>
-    </tr>
-    </thead>
-    <tbody>
-    <% @utorrent.list['torrents'].each do |item| %>
-      <tr>
-        <td class="torrent-name"><%= @utorrent.name(item) %></td>
-        <td><%= @utorrent.size(item) %></td>
-        <td>
-          <% case @utorrent.status(item) %>
-          <% when 'completed' %>
-            <i class="icon-ok-sign"/>
-          <% when 'stopped' %>
-            <i class="icon-off"/>
-          <% when 'started' %>
-            <i class="icon-arrow-down"/>
-          <% when 'paused' %>
-            <i class="icon-pause"/>
-          <% else %>
-            <i class="icon-exclamation-sign"/>
-          <% end %>
-        </td>
-        <td><%= @utorrent.speed(item) %></td>
-        <td>
-          <% if @utorrent.status(item) == 'completed' %>
-            <div class="progress progress-success progress-striped">
-              <div class="bar" style="width: <%= @utorrent.percent(item) %>%;"></div>
-            </div>
-          <% else %>
-            <div class="progress progress-striped active">
-              <div class="bar" style="width: <%= @utorrent.percent(item) %>%;"></div>
-            </div>
-          <% end %>
-        </td>
-        <td><%= @utorrent.eta(item) %></td>
-        <td><%= @utorrent.label(item) %></td>
-        <td><%= @utorrent.connections(item) %></td>
-      </tr>
-    <% end %>
-    </tbody>
-  </table>
+<div class="btn-group">
+  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+    Filter Torrents ...
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu">
+    <li><a id="active-only">Active Only</a></li>
+    <li><a id="last-10">Last 10 Entries</a></li>
+    <li><a id="all">All</a></li>
+  </ul>
 </div>
+
+<%= render 'downloading/torrent_table', :utorrent => @utorrent, :downloading => @downloading %> %>
+
