@@ -1,8 +1,13 @@
 <p>
-  <button class="btn btn-primary active" id="torrent-btn-10">Latest 10 Entries</button>
-  <button class="btn btn-primary" id="torrent-btn-active">Active Only</button>
-  <button class="btn btn-primary" id="torrent-btn-all">All</button>
+  <a class="btn btn-primary popup-with-move-anim" href="#small-dialog" id="torrent-btn-active">Active Only</a>
+  <a class="btn btn-primary popup-with-move-anim" href="#small-dialog" id="torrent-btn-all">All</a>
 </p>
 
-<%= render 'downloading/torrent_table', :utorrent => @utorrent, :downloading => @downloading %> %>
+<a id="test" href="#small-dialog">Open with fade-slide animation</a>
+<div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+  <h1>Dialog example</h1>
+  <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed.</p>
+</div>
+
+<%= render 'downloading/torrent_table', :utorrent => @utorrent, :downloading => @downloading %>
 
