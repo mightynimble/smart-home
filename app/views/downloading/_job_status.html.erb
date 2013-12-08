@@ -1,14 +1,8 @@
-<div class="btn-group">
-  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-    Filter Torrents ...
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu">
-    <li><a id="active-only">Active Only</a></li>
-    <li><a id="last-10">Last 10 Entries</a></li>
-    <li><a id="all">All</a></li>
-  </ul>
-</div>
+<p>
+  <button class="btn btn-primary active" id="torrent-btn-10">Latest 10 Entries</button>
+  <button class="btn btn-primary" id="torrent-btn-active">Active Only</button>
+  <button class="btn btn-primary" id="torrent-btn-all">All</button>
+</p>
 
 <%= render 'downloading/torrent_table', :utorrent => @utorrent, :downloading => @downloading %> %>
 
